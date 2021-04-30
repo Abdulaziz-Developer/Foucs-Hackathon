@@ -13,6 +13,7 @@ body {
 }
 
 .App {
+  padding-top: 1%;
   height: 100%;
   width: 100%;
 }
@@ -88,5 +89,60 @@ h1 {
           justify-content: space-between;
   width: 500px;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .timer-area .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .timer-area .stop-btn {
+    margin-top: 20px;
+  }
+}
+
+.cards-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  background: #f5f87c;
+  padding: 1%;
+  border: 5px solid #000000;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 20px 35px;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 25px;
+  color: #f87060;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card p {
+  margin-top: 60px;
 }
 /*# sourceMappingURL=style.css.map */
