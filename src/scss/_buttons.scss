@@ -1,0 +1,22 @@
+%btn {
+  width: 90px;
+  height: 90px;
+  font-size: 20px;
+  font-family: "Roboto Mono", monospace;
+  background: #98cd8b;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+.start-btn {
+  @extend %btn;
+  background: #98cd8b;
+}
+.stop-btn {
+  @extend %btn;
+  background-color: #cd8f8b;
+}
