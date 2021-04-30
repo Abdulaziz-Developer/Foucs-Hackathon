@@ -22,14 +22,12 @@ function App() {
   const handlePause = async () => {
     clearInterval(increment.current);
     setIsPaused(false);
-
+    setTimer(0);
     await swal("Write something here:", {
       content: "input",
     }).then((value) =>
       noteStore.addNote({ para: value, time: formatTime(), date: Date() })
     );
-
-    setTimer(0);
   };
 
   const formatTime = () => {
